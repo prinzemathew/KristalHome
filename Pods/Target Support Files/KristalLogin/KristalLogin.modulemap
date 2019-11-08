@@ -1,0 +1,6 @@
+framework module KristalLogin {
+  umbrella header "KristalLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3783AE7CFA9F895232DF5F86 /* Pods_KristalHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109C5BC86717F6B9A73A8E08 /* Pods_KristalHome.framework */; };
 		48141F7423750BC7005893ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48141F7323750BC7005893ED /* AppDelegate.swift */; };
 		48141F7623750BC7005893ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48141F7523750BC7005893ED /* SceneDelegate.swift */; };
 		48141F7823750BC7005893ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48141F7723750BC7005893ED /* ViewController.swift */; };
@@ -18,20 +19,8 @@
 		48E71E802375368E00CF42C3 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E71E7F2375368E00CF42C3 /* Country.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		482E24C323750D7B00D3897F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		109C5BC86717F6B9A73A8E08 /* Pods_KristalHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KristalHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48141F7023750BC7005893ED /* KristalHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KristalHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48141F7323750BC7005893ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48141F7523750BC7005893ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +32,8 @@
 		48E71E772375207300CF42C3 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		48E71E7C23752DAF00CF42C3 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 		48E71E7F2375368E00CF42C3 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		5D6274A4A5EC8B8F74A1164D /* Pods-KristalHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KristalHome.release.xcconfig"; path = "Target Support Files/Pods-KristalHome/Pods-KristalHome.release.xcconfig"; sourceTree = "<group>"; };
+		CD804C1ED5108363E1E16D9C /* Pods-KristalHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KristalHome.debug.xcconfig"; path = "Target Support Files/Pods-KristalHome/Pods-KristalHome.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3783AE7CFA9F895232DF5F86 /* Pods_KristalHome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +54,7 @@
 				48141F7223750BC7005893ED /* KristalHome */,
 				48141F7123750BC7005893ED /* Products */,
 				482E24C023750D7B00D3897F /* Frameworks */,
+				4AD19B6134E832D8F964B9E6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,8 +86,18 @@
 		482E24C023750D7B00D3897F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				109C5BC86717F6B9A73A8E08 /* Pods_KristalHome.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AD19B6134E832D8F964B9E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD804C1ED5108363E1E16D9C /* Pods-KristalHome.debug.xcconfig */,
+				5D6274A4A5EC8B8F74A1164D /* Pods-KristalHome.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48141F8423750BC9005893ED /* Build configuration list for PBXNativeTarget "KristalHome" */;
 			buildPhases = (
+				038F9AE278FF3C3CD4E0EAA0 /* [CP] Check Pods Manifest.lock */,
 				48141F6C23750BC7005893ED /* Sources */,
 				48141F6D23750BC7005893ED /* Frameworks */,
 				48141F6E23750BC7005893ED /* Resources */,
-				482E24C323750D7B00D3897F /* Embed Frameworks */,
+				C848BF11E8FA62B184465D56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		038F9AE278FF3C3CD4E0EAA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KristalHome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C848BF11E8FA62B184465D56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KristalHome/Pods-KristalHome-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KristalHome/Pods-KristalHome-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KristalHome/Pods-KristalHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48141F6C23750BC7005893ED /* Sources */ = {
@@ -308,6 +354,7 @@
 		};
 		48141F8523750BC9005893ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD804C1ED5108363E1E16D9C /* Pods-KristalHome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,6 +373,7 @@
 		};
 		48141F8623750BC9005893ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D6274A4A5EC8B8F74A1164D /* Pods-KristalHome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_KristalHome {
+  umbrella header "Pods-KristalHome-umbrella.h"
+
+  export *
+  module * { export * }
+}

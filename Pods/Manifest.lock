@@ -1,0 +1,16 @@
+PODS:
+  - KristalLogin (1.0.0)
+
+DEPENDENCIES:
+  - KristalLogin
+
+SPEC REPOS:
+  trunk:
+    - KristalLogin
+
+SPEC CHECKSUMS:
+  KristalLogin: f76fc9308ef073962a7bc493316af08084894962
+
+PODFILE CHECKSUM: 86dafec411b9d7f5233039bb2bcb19197d37e3a0
+
+COCOAPODS: 1.8.4
