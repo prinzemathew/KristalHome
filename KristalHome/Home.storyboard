@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ed1-1M-lV6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="BU8-mH-TD1">
+            <objects>
+                <viewController id="GSg-Nn-jCH" customClass="ViewController" customModule="KristalHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kam-4T-HSS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whX-U0-F87">
+                                <rect key="frame" x="16" y="444.5" width="382" height="61"/>
+                                <color key="backgroundColor" red="0.0" green="0.58431372550000005" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginTapped:" destination="GSg-Nn-jCH" eventType="touchUpInside" id="x2R-4w-Ior"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twl-8d-Vbz">
+                                <rect key="frame" x="16" y="444.5" width="382" height="61"/>
+                                <color key="backgroundColor" red="0.0" green="0.58431372550000005" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="20"/>
+                                <state key="normal" title="Country Listing">
+                                    <color key="titleColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="countryTapped:" destination="GSg-Nn-jCH" eventType="touchUpInside" id="yeJ-3n-UVh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="whX-U0-F87" firstAttribute="centerY" secondItem="erZ-6B-OMX" secondAttribute="centerY" id="2ZL-zr-CJ0"/>
+                            <constraint firstItem="twl-8d-Vbz" firstAttribute="width" secondItem="whX-U0-F87" secondAttribute="width" id="6cX-4b-r9t"/>
+                            <constraint firstItem="twl-8d-Vbz" firstAttribute="centerY" secondItem="whX-U0-F87" secondAttribute="centerY" id="EeJ-LD-Ugz"/>
+                            <constraint firstItem="erZ-6B-OMX" firstAttribute="trailing" secondItem="whX-U0-F87" secondAttribute="trailing" constant="16" id="JeK-Kz-0hu"/>
+                            <constraint firstItem="twl-8d-Vbz" firstAttribute="centerY" secondItem="erZ-6B-OMX" secondAttribute="centerY" id="XVN-0b-q3H"/>
+                            <constraint firstItem="twl-8d-Vbz" firstAttribute="height" secondItem="whX-U0-F87" secondAttribute="height" id="gYt-uE-h4K"/>
+                            <constraint firstItem="whX-U0-F87" firstAttribute="leading" secondItem="erZ-6B-OMX" secondAttribute="leading" constant="16" id="pnx-11-uWX"/>
+                            <constraint firstItem="twl-8d-Vbz" firstAttribute="centerY" secondItem="whX-U0-F87" secondAttribute="centerY" id="wyH-hk-4Qs"/>
+                            <constraint firstItem="whX-U0-F87" firstAttribute="centerX" secondItem="erZ-6B-OMX" secondAttribute="centerX" id="z77-Wj-L75"/>
+                            <constraint firstItem="twl-8d-Vbz" firstAttribute="centerX" secondItem="erZ-6B-OMX" secondAttribute="centerX" id="z9a-fj-wIa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="erZ-6B-OMX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VbS-SO-l9E"/>
+                    <connections>
+                        <outlet property="buttonCountry" destination="twl-8d-Vbz" id="ar6-9e-jdH"/>
+                        <outlet property="buttonLogin" destination="whX-U0-F87" id="Dp3-w6-PyR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5kg-lW-F8U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="83.705357142857139"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="goh-Bn-xHD">
+            <objects>
+                <tableViewController storyboardIdentifier="tableViewController" id="IS5-zt-Q7E" customClass="TableViewController" customModule="KristalHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kVc-xp-baY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="IS5-zt-Q7E" id="uYB-rc-lNA"/>
+                            <outlet property="delegate" destination="IS5-zt-Q7E" id="Ggl-Ql-aBb"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="tableView" destination="kVc-xp-baY" id="BU3-CC-1Vq"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mH2-qz-RtB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="348" y="-591"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yuZ-Nl-vtE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ed1-1M-lV6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="415-kX-QV0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GSg-Nn-jCH" kind="relationship" relationship="rootViewController" id="AB7-lx-hCM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9F-5L-dBz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+</document>
